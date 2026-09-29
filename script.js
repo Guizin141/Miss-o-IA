@@ -13,12 +13,8 @@ const perguntas = [
     alternativas: ["Alternativa 1", "Alternativa 2"],
   },
 ];
-let atual = 0;
-let perlguntaAtual;
-function mostraPergunta() {
-  perguntaAtual = perguntas[atual];
-  caixaPerguntas.textContent = perguntaAtual.enunciado;
-}mostraPergunta();
+
+mostraPergunta();
 const perguntas = [
   {
     enunciado:
@@ -58,3 +54,8 @@ const perguntas = [
     ],
   },
 ];
+let atual = 0;
+let perlguntaAtual;
+function mostraPergunta() 
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
