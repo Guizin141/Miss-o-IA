@@ -56,6 +56,17 @@ const perguntas = [
 ];
 let atual = 0;
 let perlguntaAtual;
-function mostraPergunta() 
+function mostraPergunta() {
   perguntaAtual = perguntas[atual];
   caixaPerguntas.textContent = perguntaAtual.enunciado;
+mostraPergunta();
+}
+function mostraAlternativas() {}
+mostraPergunta();
+function mostraAlternativas() {
+  for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
+  }
+}
